@@ -1,0 +1,976 @@
+/*---GLOBAL---*/
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding 0;
+    line-height: 1.6;
+}
+
+html,
+body {
+    background: #262525;
+    width: 100%;
+    height: 100%;
+}
+
+.hvid {
+    color: #c0c0c0;
+}
+
+.gul {
+    color: #ab8b63;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.overskrift {
+    font-size: 180%;
+    margin-bottom: 0%;
+}
+
+.underoverskrift {
+    font-size: 140%;
+    margin-bottom: auto;
+}
+
+.est {
+    font-size: 80%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+}
+
+.skaeg {
+    width: 50%;
+}
+
+.tekst {
+    font-size: 100%;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/*---------HEADER---------*/
+
+/* Baggrund og Logo */
+
+.headerburger {
+    background-image: url(../images/forsidebillede.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#headlogo1 {
+    width: 35%;
+    position: absolute;
+    left: 33%;
+    top: 10px;
+}
+
+/* BURGER - NAV */
+
+.nav {
+    text-align: right;
+    height: 300px;
+    line-height: 300px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: grey;
+    margin: 0;
+    line-height: 100px;
+    display: block;
+    clear: right;
+    height: 100px;
+    position: relative;
+    top: 220px;
+    color: #C0c0c0;
+    background-color: #262525;
+    border-bottom: 2px solid #494a4c;
+    font-size: 22px;
+}
+
+label {
+    margin: 10px 30px 0 0;
+    font-size: 40px;
+    line-height: 70px;
+    display: block;
+    width: 30px;
+    float: right;
+    color: #C0C0C0;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+}
+
+.nav2 {
+    display: none;
+}
+
+
+/*----INDEX----*/
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+#startside {
+    background-image: url(../images/forsidebillede.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#startsidecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.startsideitem {
+    margin-top: 30%;
+    width: 100%;
+    height: 30%;
+}
+
+#startsideknap {
+    height: 30px;
+    transition: all 1s ease;
+    transform: scale(1)
+}
+
+#startsideknap:hover {
+    transform: scale(1.5) perspective(1px)
+}
+
+
+#startsidelogo {
+    width: 60%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*-----FORSIDE-------*/
+
+header {
+    grid-area: header;
+}
+
+.barberen {
+    grid-area: main1;
+}
+
+.historie {
+    grid-area: main2;
+}
+
+.mandesladder {
+    grid-area: heading;
+}
+
+.slider-first {
+    grid-area: slider1;
+}
+
+.slider-second {
+    grid-area: slider2
+}
+
+footer {
+    grid-area: footer
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header' 'main1' 'main2' 'heading' 'slider1' 'slider2' 'footer';
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+.grid-container > section,
+h2,
+footer,
+header,
+figure {
+
+    text-align: center;
+    padding: 0px 0;
+}
+
+.h2 {
+    margin-top: 5%;
+}
+
+
+
+.tekstcontainer {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 8%;
+}
+
+
+/*--------SLIDER------*/
+
+.vurderingstekst {
+    z-index: 100;
+    font-size: 50%;
+    text-align: center;
+    color: #c0c0c0;
+    padding-top: 0px;
+    margin: 0;
+}
+
+.slide {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #262525;
+    height: 250px;
+    width: 100%;
+}
+
+.flexslider1 {
+    width: auto;
+    margin: 4% auto 0;
+    height: 25%;
+}
+
+.flexslider2 {
+    width: 100%;
+    height: 20%;
+    padding: 2% 10%;
+    font-size: 60%;
+    line-height: 1.6;
+}
+
+.flexslider3 {
+    width: auto;
+    margin: 0 auto 0 auto;
+    height: 7%;
+    padding: 0 0 6% 0;
+}
+
+.slidetablet {
+    display: none;
+}
+
+.slidedesktop {
+    display: none;
+}
+
+/* Mod højre */
+
+.slider-first {
+    overflow: hidden;
+    height: 250px;
+}
+
+.slider-first figure #slidercontainer section {
+    width: 20%;
+    float: left;
+}
+
+.slider-first figure .imgbag {
+    width: 100%;
+    float: left;
+}
+
+.slider-first figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slidy infinite;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    22% {
+        left: -100%;
+    }
+
+    42% {
+        left: -100%;
+    }
+
+    44% {
+        left: -200%;
+    }
+
+    64% {
+        left: -200%;
+    }
+
+    66% {
+        left: -300%;
+    }
+
+    86% {
+        left: -300%;
+    }
+
+    88% {
+        left: -400%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+/* Mod venstre */
+
+.slider-second {
+    overflow: hidden;
+    height: 250px;
+}
+
+.slider-second #figure2 #slidercontainer2 section {
+    width: 20%;
+    float: left;
+}
+
+.slider-second #figure2 .imgbag {
+    width: 100%;
+    float: left;
+}
+
+.slider-second #figure2 {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slidy2 infinite;
+}
+
+@keyframes slidy2 {
+    0% {
+        left: -400%;
+    }
+
+    20% {
+        left: -400%;
+    }
+
+    22% {
+        left: -300%;
+    }
+
+    42% {
+        left: -300%;
+    }
+
+    44% {
+        left: -200%;
+    }
+
+    64% {
+        left: -200%;
+    }
+
+    66% {
+        left: -100%;
+    }
+
+    86% {
+        left: -100%;
+    }
+
+    88% {
+        left: 0%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+/*------FOOTER-------*/
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #262525;
+    color: #c0c0c0;
+    text-align: center;
+}
+
+#containerfooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 5%;
+}
+
+.footerflex {
+    margin: 10px 30px;
+    color: #c0C0C0;
+    width: 100%;
+    font-size: 80%;
+}
+
+#facebookikon {
+    width: 40%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+/*-------GALLRI--------*/
+
+header {
+    grid-area: header;
+}
+
+.galleri {
+    grid-area: main1;
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.pic2 {
+    grid-area: pic2;
+}
+
+.pic3 {
+    grid-area: pic3;
+}
+
+.pic4 {
+    grid-area: pic4;
+}
+
+.pic5 {
+    grid-area: pic5;
+}
+
+.pic6 {
+    grid-area: pic6;
+}
+
+.pic7 {
+    grid-area: pic7;
+}
+
+.pic8 {
+    grid-area: pic8;
+}
+
+footer {
+    grid-area: footer
+}
+
+
+.grid-container-gallery {
+    display: grid;
+    grid-template-areas: 'header' 'main1' 'pic1' 'pic2' 'pic3' 'pic4' 'pic5' 'pic6' 'pic7' 'pic8' 'footer';
+    grid-gap: 25px;
+}
+
+
+.grid-container-gallery > a > img {
+    width: 90%;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+/*-----------TABLET PORTRÆT------------*/
+
+@media only screen and (min-width:600px) {
+
+
+    *----INDEX---*/ .startsideitem {
+        margin-top: 5%;
+        width: 100%;
+        height: 30%;
+    }
+
+
+
+    #startsidelogo {
+        width: 40%;
+        height: auto;
+        margin-bottom: 10%;
+        padding-bottom: 0;
+    }
+
+    #facebookikon {
+        width: 100%;
+        height: 100%;
+        margin-top: 4%;
+
+    }
+
+    .footerflex {
+        width: 25%;
+    }
+
+    .skaeg {
+        margin-bottom: 3%;
+    }
+
+    .mandesladder {
+        margin-top: 3%;
+    }
+
+    /*-------FORSIDE------*/
+    .item5 h1 {
+        font-size: 145%;
+        margin-top: 2%;
+    }
+
+    .skaeg {
+        width: 40%;
+    }
+
+    .tekstforside {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    /*---SLIDER---*/
+    .slidedesktop {
+        display: none;
+    }
+
+    .slider-second {
+        display: none;
+    }
+
+    .slidetablet {
+        display: flex;
+    }
+
+    .slider-first {
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .slider-first figure #slidercontainer section {
+        width: 10%;
+        float: left;
+    }
+
+    .slider-first figure {
+        animation: 20s slidy infinite;
+    }
+
+    @keyframes slidy {
+        0% {
+            left: 0%;
+        }
+
+        15% {
+            left: 0%;
+        }
+
+        20% {
+            left: -50%;
+        }
+
+        35% {
+            left: -50%;
+        }
+
+        40% {
+            left: -100%;
+        }
+
+        55% {
+            left: -100%;
+        }
+
+        60% {
+            left: -150%;
+        }
+
+        75% {
+            left: -150%;
+        }
+
+        80% {
+            left: -200%;
+        }
+
+        100% {
+            left: -200%;
+        }
+
+    }
+
+    /*-------GALLRI--------*/
+    .grid-container-gallery {
+        display: grid;
+        grid-template-areas: 'header header' 'main1 main1' 'pic1 pic2' 'pic3 pic4' 'pic5 pic6' 'pic7 pic8' 'footer footer';
+        grid-gap: 5px;
+    }
+
+
+
+    .grid-container-gallery > a > img {
+        width: 80%;
+        margin: 0;
+        display: flex;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+    }
+
+
+    /*-------FOOTER-----*/
+    .footerflex {
+        width: 18%;
+    }
+
+    #containerfooter {
+        margin-bottom: 2%;
+        align-items: center;
+    }
+
+    #facebookikon {
+        width: 40%;
+    }
+
+    .kontakttekst {
+        font-size: 80%;
+    }
+
+    .ikon2 {
+        float: right;
+    }
+}
+
+
+/*-----------TABLET LANDSCAPE------------*/
+
+@media only screen and (min-width:768px) {
+
+    /* ----------HEADER-------------- */
+    /* Baggrund og Logo */
+    #headlogo1 {
+        display: none;
+    }
+
+    #headlogo2 {
+        width: 150px;
+
+    }
+
+    /* FLEX */
+    #containerhead {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* NAVIGATION STYLING */
+    .nav {
+        display: none;
+    }
+
+    .nav2 {
+        display: contents;
+    }
+
+    .menu2 {
+        margin: 0;
+        background-image: url(../images/forsidebillede.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 250px;
+
+    }
+
+    .menu2 a {
+        text-decoration: none;
+        width: 20%;
+        text-align: center;
+        margin: 0 10px;
+        padding: 0 10px;
+        line-height: 70px;
+        font-size: 25px;
+        color: #c0c0c0;
+        position: relative;
+
+    }
+
+    .menu2 .hoverhead:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #c0c0c0;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .menu2 .hoverhead:hover:before {
+        visibility: visible;
+        transform: scaleX(0.9);
+    }
+
+    label {
+        margin: 0 40px 0 0;
+        font-size: 26px;
+        line-height: 70px;
+        display: none;
+    }
+
+    #toggle2 {
+        display: none;
+    }
+
+
+    .containerfooter {
+        height: 10%;
+
+    }
+}
+
+/*-------------LAPTOP------------*/
+
+@media only screen and (min-width:992px) {
+
+    /*----- INDEX -----*/
+    .startsideitem {
+        margin-top: 5%;
+        width: 100%;
+        height: 30%;
+    }
+
+
+    #startsidelogo {
+        width: 30%;
+        height: auto;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #startsideknap {
+        height: 35px;
+        transition: all 1s ease;
+        transform: scale(1)
+    }
+
+    #startsideknap:hover {
+        transform: scale(1.5) perspective(1px)
+    }
+    /*----- FORSIDE -----*/
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'header header' 'main1 main2' 'heading heading' 'slider1 slider1' 'slider2 slider2' 'footer footer';
+        grid-gap: 10px;
+    }
+
+
+    .container-grid {
+        display: none;
+    }
+
+    .grid-container > section,
+    h2,
+    footer,
+    header,
+    figure {
+        text-align: center;
+        padding: 0px 0;
+    }
+
+    #tekstcontainer {
+        margin: 0 15% 5% 15%;
+        font-size: 120%
+    }
+
+    .est {
+        margin: 0 0 2% 0;
+    }
+
+    .skaeg {
+        width: 60%;
+    }
+
+    .historie {
+        margin-top: 160px;
+    }
+
+    .historie > p {
+        text-align: justify;
+        font-size: 110%;
+    }
+
+    .barberen > h1 {
+        font-size: 230%;
+        margin-top: 100px;
+    }
+    #skaegcontainer {
+        width: 100%;
+        float: left;
+        padding: 0;
+        margin: 2% 0;
+        display: inline;
+    }
+
+    .mandesladder {
+        margin-top: 150px;
+    }
+
+
+
+
+
+    /*----- SLIDER -----*/
+    .slider-second {
+        display: none;
+    }
+
+
+    .slidedesktop {
+        display: flex;
+    }
+
+    .slider-first {
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .slider-first figure #slidercontainer section {
+        width: 6.667%;
+        float: left;
+    }
+
+    .slider-first figure {
+        animation: 15s slidy infinite;
+    }
+
+    @keyframes slidy {
+        0% {
+            left: 0%;
+        }
+
+        15% {
+            left: 0%;
+        }
+
+        30% {
+            left: 0%;
+        }
+
+        33.33% {
+            left: -33.33%;
+        }
+
+        48.33% {
+            left: -33.33%;
+        }
+
+        63.33% {
+            left: -33.33%;
+        }
+
+        66.66% {
+            left: -66.66%;
+        }
+
+        81.66% {
+            left: -66.66%;
+        }
+
+        100% {
+            left: -66.66%;
+        }
+
+
+    }
+
+/*-------GALLRI-------*/
+    .grid-container-gallery {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas: 'header header header header' 'main1 main1 main1 main1' 'pic1 pic2 pic3 pic4' 'pic5 pic6 pic7 pic8' 'footer footer footer footer';
+        grid-gap: 0;
+    }
+
+
+    .grid-container-gallery > a > img {
+        width: 80%;
+        margin: 0;
+        display: flex;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+    }
+    .grid-container-gallery > a > img:hover {
+        box-shadow: 0 0 2px 1px #c0c0c0;
+    }
+    
+    .galleri {
+        margin-top: 5%;
+    }
+
+    /*----------FOOTER--------*/
+    footer {
+        margin-top: 5%;
+    }
+
+}
